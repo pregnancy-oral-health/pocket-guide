@@ -8,7 +8,7 @@
     content="width=device-width, initial-scale=1"
   >
 
-  <title>Pregnancy Pocket Card</title>
+  <title>Pregnancy & Oral Health Pocket Card</title>
 
   <style>
     * {
@@ -44,45 +44,52 @@
     }
 
     .feedback {
-      width: 100%;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 24px;
+      width: calc(100% - 48px);
+      max-width: 620px;
+      margin: 22px auto 40px;
+      padding: 22px 0 0;
       text-align: center;
+      border-top: 1px solid #e5e5e5;
     }
 
     .feedback h2 {
-      margin: 0 0 12px;
-      font-size: 24px;
+      margin: 0 0 8px;
+      color: #222;
+      font-size: 18px;
+      font-weight: 600;
     }
 
     .feedback p {
-      margin: 0;
-      color: #555;
-      font-size: 16px;
-      line-height: 1.5;
+      margin: 0 auto;
+      max-width: 560px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.55;
     }
 
     .feedback-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #2c6db2;
+      margin-top: 15px;
+      padding: 9px 20px;
+      background: #285a8e;
       color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .feedback-button:hover,
-    .feedback-button:focus {
-      background: #1f4f82;
-    }
-
-    .version {
-      margin-top: 24px;
-      color: #777;
       font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .feedback-button:hover {
+      background: #1e4772;
+      transform: translateY(-1px);
+    }
+
+    .feedback-button:focus {
+      outline: 3px solid rgba(40, 90, 142, 0.25);
+      outline-offset: 3px;
     }
 
     @media (max-width: 700px) {
@@ -91,16 +98,22 @@
       }
 
       .feedback {
-        margin: 24px auto;
-        padding: 20px;
+        width: calc(100% - 40px);
+        margin: 18px auto 32px;
+        padding-top: 18px;
       }
 
       .feedback h2 {
-        font-size: 21px;
+        font-size: 17px;
       }
 
       .feedback p {
-        font-size: 15px;
+        font-size: 13px;
+      }
+
+      .feedback-button {
+        padding: 9px 18px;
+        font-size: 13px;
       }
     }
   </style>
@@ -120,27 +133,22 @@
     >
   </picture>
 
-  <section class="feedback">
-    <h2>Feedback</h2>
+  <section class="feedback" aria-labelledby="feedback-heading">
+    <h2 id="feedback-heading">Have feedback?</h2>
 
     <p>
-      This pocket card is periodically updated to reflect current evidence
-      and user feedback. If you identify an error or have suggestions for
-      future revisions, please submit your comments.
+      Help improve future versions of this pocket card by submitting
+      comments, corrections, or suggestions.
     </p>
 
     <a
       class="feedback-button"
-      href="https://forms.gle/FMnMvbNyTjRFMSfJA"
+      href="https://forms.gle/uQ1EUHq6YVmBTczd8"
       target="_blank"
       rel="noopener noreferrer"
     >
       Submit Feedback
     </a>
-
-    <p class="version">
-      Pregnancy &amp; Oral Health Pocket Card · Version 1.0 · 2026
-    </p>
   </section>
 
 </body>
