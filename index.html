@@ -1,1 +1,71 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Pregnancy Pocket Card</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: white;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    picture {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .desktop-image {
+      max-width: 1400px;
+    }
+
+    @media (max-width: 700px) {
+      .desktop-image {
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <picture>
+    <source
+      media="(max-width: 700px)"
+      srcset="mobile.png"
+    >
+
+    <img
+      class="desktop-image"
+      src="desktop.png"
+      alt="Pregnancy and Oral Health Guidelines pocket card"
+    >
+  </picture>
+</body>
+</html>
